@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/link', function () {
+    $exitCode = Artisan::call('storage:link');
+});
